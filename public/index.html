@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b18">
+  <title>Neon Stack — Tetris</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><p class="eyebrow">DEPLOY HATCH ARCADE</p><h1>NEON <span>STACK</span></h1></header>
+    <section class="game-layout">
+      <aside class="panel stats">
+        <div><small>SCORE</small><strong id="score">0</strong></div>
+        <div><small>LINES</small><strong id="lines">0</strong></div>
+        <div><small>LEVEL</small><strong id="level">1</strong></div>
+        <button id="pause">PAUSE</button>
+      </aside>
+      <div class="board-wrap">
+        <canvas id="board" width="300" height="600" aria-label="Tetris game board"></canvas>
+        <div id="overlay" class="overlay"><h2>READY?</h2><p>Stack the signal. Clear the grid.</p><button id="start">START GAME</button></div>
+      </div>
+      <aside class="panel next-panel">
+        <small>NEXT</small><canvas id="next" width="120" height="120"></canvas>
+        <div class="controls"><small>CONTROLS</small><p><kbd>←</kbd><kbd>→</kbd> Move</p><p><kbd>↑</kbd> Rotate</p><p><kbd>↓</kbd> Soft drop</p><p><kbd>Space</kbd> Hard drop</p><p><kbd>P</kbd> Pause</p></div>
+      </aside>
+    </section>
+    <footer>Arrow keys to move · Space to drop · Built for the edge</footer>
+  </main>
+  <script src="/game.js"></script>
+</body>
+</html>
